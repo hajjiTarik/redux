@@ -6,15 +6,19 @@
     "react-scripts": "^0.6.0"
   },
   "dependencies": {
-    "react": "^15.3.0",
+    "react": "^16.5.0",
     "react-dom": "^15.3.0",
     "react-redux": "^4.4.5",
     "redux": "^3.5.2",
-    "redux-undo": "^1.0.0-beta9"
+    "redux-undo": "^1.0.0",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "eject": "react-scripts eject"
-  }
+    "eject": "react-scripts eject",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
